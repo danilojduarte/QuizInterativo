@@ -5,26 +5,49 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background: #f4f0ea;
   color: #798252;
-  font-family: "Montserrat", system-ui;
-  
+  font-family: "Cabin", sans-serif; 
+  font-weight: 400;
 }
+header {
+  padding: 2rem;
+  background-color: #331f19;
+}
+
 h1 {
-  border: 2px solid #000;
-  border-radius: 8px;
   text-align: center;
   padding: 20px;
-  color: orange;
+  color: #fff;
   font-weight: 600;
   transition: all .40s ease;
-  margin: 2rem;
   cursor: pointer;
 }
-h1:hover {
-  color: rgb(2, 2, 117);
-  border: 2px solid rgb(2, 2, 117);
+header p {
+  text-align: center;
+  font-size: 25px;
+}
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section h2 {
+  color: #331f19;
+  font-size: 1.2rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #ccd595;
 }
